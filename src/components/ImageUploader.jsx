@@ -70,9 +70,9 @@ function ImageUploader({ onImageSelect }) {
       <div className="instructions">
         <h3>How to use:</h3>
         <ol>
-          <li>Upload an image by dragging it here or clicking "Browse Files"</li>
+          <li>Upload an image by dragging it here or clicking &quot;Browse Files&quot;</li>
           <li>Adjust the target file size using the slider</li>
-          <li>Click "Compress Image" to start compression</li>
+          <li>Click &quot;Compress Image&quot; to start compression</li>
           <li>Download your compressed image</li>
         </ol>
       </div>
