@@ -1,0 +1,156 @@
+.uploader-container {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  padding: 40px;
+  max-width: 700px;
+  width: 100%;
+}
+
+.upload-area {
+  border: 3px dashed #cbd5e0;
+  border-radius: 12px;
+  padding: 60px 40px;
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  background: #f7fafc;
+}
+
+.upload-area:hover {
+  border-color: #667eea;
+  background: #edf2f7;
+}
+
+.upload-area.dragging {
+  border-color: #667eea;
+  background: #e6f2ff;
+  transform: scale(1.02);
+}
+
+.upload-icon {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.upload-area h2 {
+  color: #2d3748;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.upload-area p {
+  color: #718096;
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+.supported-formats {
+  font-size: 0.9rem !important;
+  color: #a0aec0 !important;
+  margin-top: 15px !important;
+}
+
+.file-input {
+  display: none;
+}
+
+.browse-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 14px 32px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+.browse-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+}
+
+.instructions {
+  margin-top: 40px;
+  padding: 30px;
+  background: #f7fafc;
+  border-radius: 12px;
+  border-left: 4px solid #667eea;
+}
+
+.instructions h3 {
+  color: #2d3748;
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.instructions ol {
+  list-style-position: inside;
+  color: #4a5568;
+  line-height: 2;
+}
+
+.instructions li {
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .uploader-container {
+    padding: 30px 20px;
+  }
+
+  .upload-area {
+    padding: 40px 20px;
+  }
+
+  .upload-area h2 {
+    font-size: 1.5rem;
+  }
+
+  .instructions {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .upload-area h2 {
+    font-size: 1.3rem;
+  }
+
+  .upload-area p {
+    font-size: 0.9rem;
+  }
+
+  .browse-button {
+    padding: 12px 24px;
+    font-size: 0.95rem;
+  }
+
+  .instructions h3 {
+    font-size: 1.1rem;
+  }
+
+  .instructions li {
+    font-size: 0.9rem;
+  }
+}
