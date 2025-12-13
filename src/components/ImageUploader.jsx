@@ -22,7 +22,7 @@ function ImageUploader({ onImageSelect }) {
     if (files.length > 0 && files[0].type.startsWith('image/')) {
       onImageSelect(files[0])
     } else {
-      alert('Please drop a valid image file')
+      alert('Please drop a valid image file (JPG, PNG, WEBP, or GIF)')
     }
   }
 
@@ -70,9 +70,9 @@ function ImageUploader({ onImageSelect }) {
       <div className="instructions">
         <h3>How to use:</h3>
         <ol>
-          <li>Upload an image by dragging it here or clicking &quot;Browse Files&quot;</li>
+          <li>Upload an image by dragging it here or clicking "Browse Files"</li>
           <li>Adjust the target file size using the slider</li>
-          <li>Click &quot;Compress Image&quot; to start compression</li>
+          <li>Click "Compress Image" to start compression</li>
           <li>Download your compressed image</li>
         </ol>
       </div>

@@ -65,7 +65,7 @@ function App() {
       reader.readAsDataURL(compressed)
     } catch (error) {
       console.error('Compression error:', error)
-      alert('Failed to compress image. Please try again.')
+      alert(`Failed to compress image: ${error.message || 'Please try again with a different image or target size.'}`)
     } finally {
       setIsCompressing(false)
     }
